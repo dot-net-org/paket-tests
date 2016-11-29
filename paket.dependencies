@@ -1,5 +1,9 @@
 redirects: on
-source ../nugets
-source https://nuget.org/api/v2
+framework: >= net461
+copy_local: true
 
-nuget Microsoft.CodeAnalysis.Common ~> 1.3.2
+source https://api.nuget.org/v3/index.json
+source https://www.myget.org/F/e5r/api/v3/index.json
+
+nuget e5r.krunt ~> 0.1 prerelease
+nuget Newtonsoft.Json ~> 9.0
