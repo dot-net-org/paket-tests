@@ -2,9 +2,7 @@ REDIRECTS: ON
 COPY-LOCAL: TRUE
 FRAMEWORK: >= NET461
 NUGET
-  remote: https://www.myget.org/F/e5r
-    E5R.Krunt (0.1-aspnet-alpha3)
-      System.Console (>= 4.0)
   remote: http://api.nuget.org/v3/index.json
     Newtonsoft.Json (9.0.1)
-    System.Console (4.3)
+  remote: https://www.myget.org/F/idamfwinpkgs
+    SterlingPhone.Unofficial (1.6.1)

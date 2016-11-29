@@ -4,6 +4,7 @@ copy_local: true
 
 source https://api.nuget.org/v3/index.json
 source https://www.myget.org/F/e5r/api/v3/index.json
+source https://www.myget.org/F/idamfwinpkgs/api/v3/index.json
 
-nuget e5r.krunt ~> 0.1 prerelease
 nuget Newtonsoft.Json ~> 9.0
+nuget SterlingPhone.Unofficial ~> 1.6
