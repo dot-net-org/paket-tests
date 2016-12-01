@@ -1,4 +1,4 @@
 redirects: on
 source https://nuget.org/api/v2
 
-nuget UnionArgParser ~> 0.7
+nuget xunit
