@@ -1,2 +1,6 @@
-source https://nuget.org/api/v2
+redirects: on
+framework: auto-detect
+copy_local: true
+
+source https://api.nuget.org/v3/index.json
 nuget FAKE
