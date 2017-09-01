@@ -88,4 +88,5 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <Import Project="..\.paket\paket.targets" />
 </Project>
