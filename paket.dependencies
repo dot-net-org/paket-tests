@@ -1,3 +1,5 @@
+version 5.92.0-beta003
+
 redirects: on
 framework: auto-detect
 copy_local: true
