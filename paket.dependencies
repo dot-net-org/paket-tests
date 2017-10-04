@@ -3,4 +3,5 @@ version 5.100.2
 redirects: force
 source https://nuget.org/api/v2
 
+nuget SpecFlow 2.2.1
 nuget xunit
