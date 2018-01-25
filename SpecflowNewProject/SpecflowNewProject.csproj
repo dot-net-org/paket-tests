@@ -17,4 +17,22 @@
     </None>
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
+
+  <!-- Workaround to get SpecFlow code generation work with new csproj 
+        https://github.com/techtalk/SpecFlow/issues/820#issuecomment-342777180 -->
+  <Import Project="..\packages\SpecFlow\tools\TechTalk.SpecFlow.tasks" Condition="Exists('..\packages\SpecFlow\tools\TechTalk.SpecFlow.tasks')" />
+  <Import Project="..\packages\SpecFlow\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow\tools\TechTalk.SpecFlow.targets')" />
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <CallTarget Targets="GenerateSpecFlowCodeBehinds" />
+  </Target>
+
+  <Target Name="GenerateSpecFlowCodeBehinds">
+    <ItemGroup>
+      <FilesToDelete Include="Features\**\*.cs" />
+    </ItemGroup>
+    <Delete Files="@(FilesToDelete)" />
+
+    <CallTarget Targets="UpdateFeatureFilesInProject"></CallTarget>
+  </Target>
 </Project>
