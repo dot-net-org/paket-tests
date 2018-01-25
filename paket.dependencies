@@ -1,5 +1,9 @@
 version 5.132.4
 
+framework: auto-detect
+copy_local: true
 redirects: force
+
 source https://nuget.org/api/v2
+
 nuget SpecFlow.Nunit
