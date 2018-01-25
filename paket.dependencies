@@ -2,3 +2,4 @@ version 5.132.4
 
 redirects: force
 source https://nuget.org/api/v2
+nuget SpecFlow.Nunit
