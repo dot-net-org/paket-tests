@@ -1,4 +1,4 @@
-version 5.92.0-beta003
+version 5.175.2
 
 redirects: on
 framework: auto-detect
@@ -6,4 +6,3 @@ copy_local: true
 
 source https://api.nuget.org/v3/index.json
 nuget FAKE
-nuget MP3Sharp

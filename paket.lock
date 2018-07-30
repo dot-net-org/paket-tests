@@ -4,4 +4,3 @@ RESTRICTION: == net461
 NUGET
   remote: https://api.nuget.org/v3/index.json
     FAKE (4.63)
-    MP3Sharp (1.0.3)
