@@ -6,4 +6,3 @@ copy_local: true
 
 source https://api.nuget.org/v3/index.json
 nuget FAKE
-nuget MP3Sharp
